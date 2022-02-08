@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>UNSA - Universitas Surakarta</title>
+  <meta content="Anjungan UNSA" name="description">
+  <meta content="Anjungan" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="assets/img/logo-unsa.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- JS Files -->
+   <!-- menunjukan waktu -->
+   <script type="text/javascript">
+    // 1 detik = 1000
+    window.setTimeout("waktu()",1000);  
+    function waktu() {   
+    var tanggal = new Date();  
+    setTimeout("waktu()",1000);  
+    document.getElementById("jam").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+":"+tanggal.getSeconds();
+    }
+    </script>
+
+  <!-- menunjukkan tanggal -->
+  <script language="JavaScript">
+    var tanggallengkap = new String();
+    var namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+    namahari = namahari.split(" ");
+    var namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+    namabulan = namabulan.split(" ");
+    var tgl = new Date();
+    var hari = tgl.getDay();
+    var tanggal = tgl.getDate();
+    var bulan = tgl.getMonth();
+    var tahun = tgl.getFullYear();
+    tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " + tahun;
+  </script>
+
+</head>
+
+<body>
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo"><img src="assets/img/logo-navbar.png" alt="" class="img-fluid">
+      <!-- navbar -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Beranda</a></li>
+          <li class="dropdown"><a href="#">Tentang UNSA<i class="bi bi-chevron-down "></i></a>
+            <ul>
+              <li><a href="sambutan-rektor.html">Sambutan Rektor</a></li>
+              <li><a href="sejarah-kampus.html">Sejarah Kampus</a></li>
+              <li><a href="visi-dan-misi.html">Visi, Misi dan Tujuan </a></li>
+              <li><a href="struktur-organisasi.html">Struktur Organisasi</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">Fakultas<i class="bi bi-chevron-down "></i></a>
+            <ul>
+              <li><a href="fakultas-a.html">Fakultas A</a></li>
+              <li><a href="#">Fakultas B</a></li>
+              <li><a href="#">Fakultas C</a></li>
+              <li><a href="#">Fakultas D</a></li>
+            </ul>
+          </li>
+          <li class="dropdown "><a href="#">UKM<i class="bi bi-chevron-down "></i></a>
+            <ul>
+              <li><a href="ukm-a.html">UKM A</a></li>
+              <li><a href="#">UKM B</a></li>
+              <li><a href="#">UKM C</a></li>
+              <li><a href="#">UKM D</a></li>
+            </ul>
+          <li><a class="nav-link scrollto " href="fasilitas.html">Fasilitas</a></li>
+          <li><a class="nav-link scrollto " href="spmb.html">SPMB</a></li>
+          <li><a class="nav-link scrollto " href="galeri.html">Galeri</a></li>
+          <li><a class="nav-link scrollto " href="kontak.html">Kontak</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Features Section ======= -->
+  <section id="features" class="features">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>UKM A</h2>
+        <p>Laboriosam et omnis fuga quis dolor direda fara</p>
+      </header>
+      <!-- Feature Tabs -->
+      <div class="row feture-tabs" data-aos="fade-up">
+        <div class="col-lg-6">
+         
+          <!-- Tabs -->
+          <ul class="nav nav-pills mb-3">
+            <li>
+              <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Profil</a>
+            </li>
+            <li>
+              <a class="nav-link" data-bs-toggle="pill" href="#tab2">Visi</a>
+            </li>
+            <li>
+              <a class="nav-link" data-bs-toggle="pill" href="#tab3">Misi</a>
+            </li>
+          </ul><!-- End Tabs -->
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+
+            <div class="tab-pane active show" id="tab1">
+              <div class="row gy-4">
+                <div class="col-lg-12 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Tab Content 1 -->
+    
+            <div class="tab-pane" id="tab2">
+              <div class="row gy-4">
+                <div class="col-lg-12 order-2 order-lg-1">
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum
+                  </p>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End Tab Content 2 -->
+    
+            <div class="tab-pane" id="tab3">
+              <div class="row gy-4">
+                <div class="col-lg-12 order-2 order-lg-1">
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                  </ul>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Tab Content 3 -->
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <img src="assets/img/about.jpg" class="img-fluid" alt="">
+        </div>
+
+      </div><!-- End Feature Tabs -->
+
+    </div>
+
+  </section><!-- End Features Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer"> 
+    <div class="container">
+      <div class="copyright-wrap d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Pratama Mandiri Solusindo</span></strong>.<br> 2022
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <script language='JavaScript'>document.write(tanggallengkap);</script><br>
+          <div id='jam' ></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/type1.js"></script>
+
+</body>
+
+</html>

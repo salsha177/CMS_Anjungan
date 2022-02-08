@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="assets/css/video.css">
+</head>
+<body>
+<div class="container-video">
+    <div class="main-video">
+        <div class="video">
+            <video src="assets/video/video1.mp4" controls muted autoplay></video>
+            <h3 class="title-video">01. Video Satu</h3>
+        </div>
+    </div>
+
+    <div class="video-list">
+        <div class="vid">
+            <video src="assets/video/video1.mp4" muted></video>
+            <h3 class="title-video">01. Video Satu</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/video/video3.mp4" muted></video>
+            <h3 class="title-video">02 video</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/video/video4.mp4" muted></video>
+            <h3 class="title-video">03 video</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/video/video4.mp4" muted></video>
+            <h3 class="title-video">04 video</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/video/video5.mp4" muted></video>
+            <h3 class="title-video">05 video</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/video/video6.mp4" muted></video>
+            <h3 class="title-video">06 video</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/video/video7.mp4" muted></video>
+            <h3 class="title-video">07 video</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/video/video8.mp4" muted></video>
+            <h3 class="title-video">08 video</h3>
+        </div>
+        <div class="vid">
+            <video src="assets/video/video9.mp4" muted></video>
+            <h3 class="title-video">09 video</h3>
+        </div>
+    </div>
+</div>
+
+<script>
+    let listVideo = document.querySelectorAll('.video-list .vid');
+    let mainVideo = document.querySelector('.main-video video');
+    let titleVideo = document.querySelector('.main-video .title-video');
+
+    listVideo.forEach(video =>{
+        video.onclick =() =>{
+            listVideo.forEach(vid =>vid.classList.remove('active'));
+            video.classList.add('active');
+            if(video.classList.contains('active')){
+                let src = video.children[0].getAttribute('src');
+                mainVideo.src = src;
+                let text = video.children[1].innerHTML;
+                titleVideo.innerHTML = text;
+            };
+        };
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>UNSA - Universitas Surakarta</title>
+  <meta content="Anjungan UNSA" name="description">
+  <meta content="Anjungan" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="assets/img/logo-unsa.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- JS Files -->
+   <!-- menunjukan waktu -->
+   <script type="text/javascript">
+    // 1 detik = 1000
+    window.setTimeout("waktu()",1000);  
+    function waktu() {   
+    var tanggal = new Date();  
+    setTimeout("waktu()",1000);  
+    document.getElementById("jam").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+":"+tanggal.getSeconds();
+    }
+    </script>
+
+  <!-- menunjukkan tanggal -->
+  <script language="JavaScript">
+    var tanggallengkap = new String();
+    var namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+    namahari = namahari.split(" ");
+    var namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+    namabulan = namabulan.split(" ");
+    var tgl = new Date();
+    var hari = tgl.getDay();
+    var tanggal = tgl.getDate();
+    var bulan = tgl.getMonth();
+    var tahun = tgl.getFullYear();
+    tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " + tahun;
+  </script>
+
+</head>
+
+<body>
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo"><img src="assets/img/logo-navbar.png" alt="" class="img-fluid">
+      <!-- navbar -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Beranda</a></li>
+          <li class="dropdown"><a href="#">Tentang UNSA<i class="bi bi-chevron-down "></i></a>
+            <ul>
+              <li><a href="sambutan-rektor.html">Sambutan Rektor</a></li>
+              <li><a href="sejarah-kampus.html">Sejarah Kampus</a></li>
+              <li><a href="visi-dan-misi.html">Visi, Misi dan Tujuan </a></li>
+              <li><a href="struktur-organisasi.html">Struktur Organisasi</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">Fakultas<i class="bi bi-chevron-down "></i></a>
+            <ul>
+              <li><a href="fakultas-a.html">Fakultas A</a></li>
+              <li><a href="#">Fakultas B</a></li>
+              <li><a href="#">Fakultas C</a></li>
+              <li><a href="#">Fakultas D</a></li>
+            </ul>
+          </li>
+          <li class="dropdown "><a href="#">UKM<i class="bi bi-chevron-down "></i></a>
+            <ul>
+              <li><a href="ukm-a.html">UKM A</a></li>
+              <li><a href="#">UKM B</a></li>
+              <li><a href="#">UKM C</a></li>
+              <li><a href="#">UKM D</a></li>
+            </ul>
+          <li><a class="nav-link scrollto " href="fasilitas.html">Fasilitas</a></li>
+          <li><a class="nav-link scrollto " href="spmb.html">SPMB</a></li>
+          <li><a class="nav-link scrollto active " href="galeri.html">Galeri</a></li>
+          <li><a class="nav-link scrollto " href="kontak.html">Kontak</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <main id="main">
+    <div class="section-title "><br><br>
+      <h2><strong></strong><br>Galeri Video</strong></h2>
+    </div>
+    <div class="container-video">
+      <div class="main-video">
+          <div class="video">
+              <video src="assets/video/video1.mp4" controls muted autoplay></video>
+              <h3 class="title-video">01. Video Satu</h3>
+          </div>
+      </div>
+  
+      <div class="video-list">
+          <div class="vid">
+              <video src="assets/video/video1.mp4" muted></video>
+              <h3 class="title-video">01. Video Satu</h3>
+          </div>
+          <div class="vid">
+              <video src="assets/video/video3.mp4" muted></video>
+              <h3 class="title-video">02 video</h3>
+          </div>
+          <div class="vid">
+              <video src="assets/video/video4.mp4" muted></video>
+              <h3 class="title-video">03 video</h3>
+          </div>
+          <div class="vid">
+              <video src="assets/video/video4.mp4" muted></video>
+              <h3 class="title-video">04 video</h3>
+          </div>
+          <div class="vid">
+              <video src="assets/video/video5.mp4" muted></video>
+              <h3 class="title-video">05 video</h3>
+          </div>
+          <div class="vid">
+              <video src="assets/video/video6.mp4" muted></video>
+              <h3 class="title-video">06 video</h3>
+          </div>
+          <div class="vid">
+              <video src="assets/video/video7.mp4" muted></video>
+              <h3 class="title-video">07 video</h3>
+          </div>
+          <div class="vid">
+              <video src="assets/video/video8.mp4" muted></video>
+              <h3 class="title-video">08 video</h3>
+          </div>
+          <div class="vid">
+              <video src="assets/video/video9.mp4" muted></video>
+              <h3 class="title-video">09 video</h3>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="section-title "><br><br>
+      <h2><strong></strong><br>Galeri Foto</strong></h2>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="grid" class="row">
+                <div class="mix col-sm-3 page1 page4 margin30">
+                    <div class="item-img-wrap ">
+                        <img src="https://via.placeholder.com/312x315/FFB6C1/000000" class="img-responsive" alt="workimg">
+                        <div class="item-img-overlay">
+                            <a href="#" class="show-image">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> 
+
+                </div>
+                <div class="mix col-sm-3 page2 page3 margin30">
+                    <div class="item-img-wrap ">
+                        <img src="https://via.placeholder.com/312x315/20B2AA/000000" class="img-responsive" alt="workimg">
+                        <div class="item-img-overlay">
+                            <a href="#" class="show-image">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> 
+
+                </div>
+                <div class="mix col-sm-3  page3 page2 margin30 ">
+                    <div class="item-img-wrap ">
+                        <img src="https://via.placeholder.com/312x315/87CEFA/000000" class="img-responsive" alt="workimg">
+                        <div class="item-img-overlay">
+                            <a href="#" class="show-image">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> 
+
+                </div>
+                <div class="mix col-sm-3  page4 margin30">
+                    <div class="item-img-wrap ">
+                        <img src="https://via.placeholder.com/312x315/EE82EE/000000" class="img-responsive" alt="workimg">
+                        <div class="item-img-overlay">
+                            <a href="#" class="show-image">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> 
+
+                </div>
+                <div class="mix col-sm-3 page1 margin30 ">
+                    <div class="item-img-wrap ">
+                        <img src="https://via.placeholder.com/312x315/#FF6347/000000" class="img-responsive" alt="workimg">
+                        <div class="item-img-overlay">
+                            <a href="#" class="show-image">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> 
+
+                </div>
+                <div class="mix col-sm-3  page2 margin30">
+                    <div class="item-img-wrap ">
+                        <img src="https://via.placeholder.com/312x315/008080/000000" class="img-responsive" alt="workimg">
+                        <div class="item-img-overlay">
+                            <a href="#" class="show-image">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> 
+
+                </div>
+                <div class="mix col-sm-3  page3 margin30">
+                    <div class="item-img-wrap ">
+                        <img src="https://via.placeholder.com/312x315/DDA0DD/000000" class="img-responsive" alt="workimg">
+                        <div class="item-img-overlay">
+                            <a href="#" class="show-image">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> 
+
+                </div>
+                <div class="mix col-sm-3 page4  margin30">
+                    <div class="item-img-wrap ">
+                        <img src="https://via.placeholder.com/312x315/FFA500/000000" class="img-responsive" alt="workimg">
+                        <div class="item-img-overlay">
+                            <a href="#" class="show-image">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> 
+                </div>               
+            </div>
+            <!--grid-->
+            <div class="foto-pagination">
+                <ul class="justify-content-center">
+                    <li><a href="#"><</a></li>
+                  <li><a href="#">1</a></li>
+                  <li class="active"><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">></a></li>
+                </ul>
+              </div>
+
+  </main>
+  <!-- ======= Footer ======= -->
+  <footer id="footer"> 
+    <div class="container">
+      <div class="copyright-wrap d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Pratama Mandiri Solusindo</span></strong>.<br> 2022
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <script language='JavaScript'>document.write(tanggallengkap);</script><br>
+          <div id='jam' ></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script>
+    let listVideo = document.querySelectorAll('.video-list .vid');
+    let mainVideo = document.querySelector('.main-video video');
+    let titleVideo = document.querySelector('.main-video .title-video');
+
+    listVideo.forEach(video =>{
+        video.onclick =() =>{
+            listVideo.forEach(vid =>vid.classList.remove('active'));
+            video.classList.add('active');
+            if(video.classList.contains('active')){
+                let src = video.children[0].getAttribute('src');
+                mainVideo.src = src;
+                let text = video.children[1].innerHTML;
+                titleVideo.innerHTML = text;
+            };
+        };
+    });
+</script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/type1.js"></script>
+
+</body>
+
+</html>
